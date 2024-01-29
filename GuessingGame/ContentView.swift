@@ -90,6 +90,7 @@ struct ContentView: View {
 
     }
     
+    // MARK: Functions
     func checkGuess() {
         
         // Provide feedback to the user
