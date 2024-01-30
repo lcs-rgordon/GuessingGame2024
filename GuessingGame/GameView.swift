@@ -88,7 +88,10 @@ struct GameView: View {
     func checkGuess() {
         
         // Attempt to unwrap the input provided by the user
-        let selectedNumber = Int(givenInput)!
+        guard let selectedNumber = Int(givenInput.trimmingCharacters(in: .whitespaces)) else {
+            feedback = "Please provide an integer."
+            return
+        }
         
         // Provide feedback to the user
         // When should they guess higher?
