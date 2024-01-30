@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  GameView.swift
 //  GuessingGame
 //
 //  Created by Russell Gordon on 2024-01-29.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GameView: View {
     
     // MARK: Stored properties
     
@@ -123,5 +123,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    GameView()
 }
